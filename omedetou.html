@@ -7,7 +7,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: red;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -33,8 +33,8 @@
 </head>
 <body>
 <biv class="content">
-<h1>おめでとうございます！！</h1>
-<h2>　あなたの写真が撮影されました！<br></h2>
+<h1>おめでとうございます！！<img src="cracker-animated-1.gif" height="100px"></h1>
+<h2><br>　あなたの写真が撮影されました！<br></h2>
 <h2>
 <div id="countdown"></div>
 </h2>
@@ -44,7 +44,14 @@
 </h3>
 
 </biv>
-<script>
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+for(let i=0;i<3;i++){
+    alert("あなたの写真が撮影されました！");
+}
+
+});
 // カウントダウンの秒数を設定します
 const countdownSeconds = 100;
 
